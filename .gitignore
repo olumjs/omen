@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# bundled client inside server
+/server/src/client
+/client/dist
+/server/dist
