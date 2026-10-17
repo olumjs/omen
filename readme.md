@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/omen-logo-dark.svg">
-    <img width="360" src="assets/omen-logo-light.svg" alt="OMEN Stack logo">
+    <img width="420" src="assets/omen-logo-light.svg" alt="OMEN Stack logo">
   </picture>
 </p>
 
