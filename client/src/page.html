@@ -1,8 +1,22 @@
-
 <script>
   import { onMount } from "olum";
+  const state = {
+    items: [],
+    loaded: false,
+  };
   onMount(async () => {
     const res = await fetch("/api/items");
-    console.log(res);
-  })
+    const json = await res.json();
+    state.items = json;
+    state.loaded = true;
+  });
 </script>
+
+<if when="state.loaded">
+  <ul>
+    <for each="item of state.items" key="item.id">
+      <li>{item.name}</li>
+    </for>
+  </ul>
+</if>
+<else> loading.. </else>
