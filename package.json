@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "node proxy.js",
-    "build": "npm run build --prefix client && mv client/dist server/src/client && npm run build --prefix server"
+    "start": "node server/dist/index.js",
+    "build": "npm run build --prefix client && cp -r client/dist server/src/client && npm run build --prefix server"
   }
 }
