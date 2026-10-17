@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 200" width="620" height="200"><g transform="translate(20 30) scale(.8)"><polygon points="0,0 200,0 148,30 52,30" fill="#19E89B"/><polygon points="0,0 52,30 100,113.1 100,173.2" fill="#10C784"/><polygon points="200,0 100,173.2 100,113.1 148,30" fill="#0A8F5F"/></g><g transform="translate(220 55)" fill="#0D1117">
+<path fill-rule="evenodd" d="M45 0a45 45 0 1 1 0 90a45 45 0 1 1 0-90zM45 18a27 27 0 1 0 0 54a27 27 0 1 0 0-54z"/>
+<polygon points="104,90 104,0 122,0 152,40 182,0 200,0 200,90 182,90 182,32 152,72 122,32 122,90"/>
+<polygon points="214,0 284,0 284,18 232,18 232,36 276,36 276,54 232,54 232,72 284,72 284,90 214,90"/>
+<polygon points="298,90 298,0 316,0 360,58 360,0 378,0 378,90 360,90 316,32 316,90"/>
+</g></svg>
