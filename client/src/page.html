@@ -1,0 +1,8 @@
+
+<script>
+  import { onMount } from "olum";
+  onMount(async () => {
+    const res = await fetch("/api/items");
+    console.log(res);
+  })
+</script>
