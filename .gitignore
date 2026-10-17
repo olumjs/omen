@@ -41,6 +41,6 @@ yarn-error.log*
 next-env.d.ts
 
 # bundled client inside server
-/server/src/client
+/src/client
 /client/dist
-/server/dist
+/dist

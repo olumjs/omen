@@ -5,7 +5,7 @@ import path from "path";
 import { connectDB } from "./db";
 import itemRoute from "./routes/item";
 
-const { PORT = 3000, CLIENT_URL} = process.env;
+const { PORT = 3000, CLIENT_URL } = process.env;
 const app = express();
 
 // middleware

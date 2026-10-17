@@ -8,9 +8,9 @@ const PORT = 3000;
 const CLIENT_PORT = 3001;
 const SERVER_PORT = 8000;
 
-const run = (dir, env) =>
-  spawn("npm", ["run", "dev"], { cwd: `${__dirname}/${dir}`, env: { ...process.env, ...env }, stdio: "inherit", detached: true });
-const children = [run("server"), run("client", { PORT: CLIENT_PORT })];
+const run = (dir, script, env) =>
+  spawn("npm", ["run", script], { cwd: `${__dirname}/${dir}`, env: { ...process.env, ...env }, stdio: "inherit", detached: true });
+const children = [run(".", "server:dev", { PORT: SERVER_PORT }), run("client", "dev", { PORT: CLIENT_PORT })];
 
 const stop = () => {
   children.forEach((child) => {
