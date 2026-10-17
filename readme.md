@@ -14,6 +14,10 @@
   <a href="https://nodejs.org">Node.js</a>
 </p>
 
+<p align="center">
+  <img width="600" src="assets/omen-stack-banner.svg" alt="OMEN: OlumJS, MongoDB, Express, Node.js">
+</p>
+
 # OMEN Stack
 
 OMEN is a full-stack JavaScript stack built on four parts:
