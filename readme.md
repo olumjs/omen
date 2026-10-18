@@ -49,8 +49,52 @@ One language from the browser to the database. No heavy framework. No virtual DO
 
 ## Requirements
 
-- [Node.js](https://nodejs.org) 18 or newer
+- [Node.js](https://nodejs.org) 22.12 or newer
 - [MongoDB](https://www.mongodb.com/try/download/community) running locally, or a [MongoDB Atlas](https://www.mongodb.com/atlas) URL
+
+## Getting started
+
+```bash
+cp .env.example .env
+npm install
+npm install --prefix client
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+## Scripts
+
+| Script | Job |
+| --- | --- |
+| `npm run dev` | Starts the client and the server with live reload. |
+| `npm run build` | Builds the client, puts it inside the server, and builds the server. |
+| `npm start` | Starts the built server. |
+
+## Ports
+
+You always open port 3000, in dev and in production.
+
+**Dev (`npm run dev`)**
+
+- **3000**: the proxy. Open this one. It shows the client and sends `/api` to the server.
+- **3001**: the client (live reload). Used only inside your machine.
+- **8000**: the server (API). Used only inside your machine.
+
+**Production (`npm run build && npm start`)**
+
+- **3000**: one server. Express serves the client and `/api` together.
+- On Render, the port is the `PORT` that Render sets, not 3000. Your code uses it, so you do not need to do anything.
+
+## Deploy (Render)
+
+| Setting | Value |
+| --- | --- |
+| Build command | `npm install && npm run build` |
+| Start command | `npm start` |
+| Environment | `MONGO_URI` (for example, a MongoDB Atlas URL) |
+
+Do not set `NODE_ENV=production` for the build. If you do, npm skips the dev packages that the build needs.
 
 ## Status
 
